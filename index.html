@@ -11,10 +11,21 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="chatbot.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
       rel="stylesheet"
     />
+     <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="page-background">
@@ -65,7 +76,7 @@
         <div class="container hero-inner">
           <div class="hero-text">
             <div class="hero-avatar-wrap">
-              <img src="assets/avatar.png" alt="Sema Nami" class="hero-avatar" />
+              <img src="images/grandmother.png" alt="Sema Nami" class="hero-avatar" />
             </div>
             <h1>
               You are not alone,<br />
@@ -216,12 +227,82 @@
         </div>
       </section>
       <!-- <!-sema nami section -  -->  
-<section>  
-  <section class="section section-alt" id="support">
-    <div class="container support-layout">
+<!-- <section>   -->
+  <section class="section section-alt" id="support-bot">
+    <!-- <div class="container support-layout"> -->
       <div class="support-column">
-        <h2>Welcome to Sema Nami chatbot.</h2>
-        <p class="section-subtitle">
+        <!-- <h2>Welcome to Sema Nami chatbot.</h2> -->
+        <!-- In your landing page index.html -->
+         <div class="sidebar">
+        <h1 class="header-title"><a href="/index.html">Sema<span id="nami-title">Nami</span></a></h1>
+
+        <div class="dropdown">
+          <button class="dropdown-toggle">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="2" y1="5" x2="20" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="2" y1="11" x2="20" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="2" y1="17" x2="20" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+            <ul class="dropdown-menu" id="dropdownMenu">
+                <li><a href="https://semanami.gtech-prc.org/index.html" class="dropdown-home-link"><img src="https://semanami.gtech-prc.org/images/home-icon5.png" alt="dropdown-home-icon" class="dropdown-home-icon"/>Home</a></li>
+                <li><button id="dropdown-toggle-language" class="toggle-language" data-translate-toggle>Choose Language</button></li>
+                <li>
+                    <a href="https://www.google.com/" class="dropdown-quick-exit-link"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>Quick Exit</a>
+                </li>
+            </ul>
+        </div>
+        <img src="https://semanami.gtech-prc.org/images/home-icon5.png" alt="home-icon" class="home-icon"/>
+        <button id="main-toggle-language" class="toggle-language" data-translate-toggle>Choose Language</button>
+        <a href="https://www.google.com/" class="quick-exit-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>Quick Exit</a>
+    </div>
+    
+    <main>
+        
+        <form class="chat-form">
+        <div class="form-wrapper">
+    
+        <div class="introduction-block">
+        <img src="https://semanami.gtech-prc.org/images/grandmother-avatar.png" alt="grandmother-avatar" class="grandmother-avatar">
+        <p data-translate="welcome" id="introduction-text">Hi my name is <span id="nami-text">Nami</span>.</p>
+        <p id="introduction-text">I'm here to listen and offer support. How can I help?</p> 
+        <!-- <p>Hi my name is Semanami and I'm here to offer support and information to anyone who has been affected by Sexual and Gender-Based Violence. You are reaching out because you have undergone some traumatic experience. I am here to assist you access confidential support and relevant services. How can I best support you today?</p> -->
+       </div>
+
+        <div id="input-container">
+        <input id="input-field" type="text" data-translate="placeholder" />
+        <button id="submit-chat">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
+        </div>
+
+        <div class="image-container">
+        <!-- <img src="images/removed_background1.png" alt="lilies" class="ui-image"/> -->
+        </div>
+        <!-- <button id="clear-history">Clear History</button> -->
+        </div>
+        </form>
+    </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script type="module" src="https://semanami.gtech-prc.org/chatbot.js" defer></script>
+        <script type="module" src="https://semanami.gtech-prc.org/qa.js" defer></script>
+        <script type="module" src="https://semanami.gtech-prc.org/translationManager.js" defer></script>
+        <!-- <p class="section-subtitle">
           You 24/7 companion,created for you with love.
         </p>
 
@@ -239,7 +320,7 @@
             target="_blank"
             rel="noopener"
           >
-            Talk to the Nami chatbot </a> </div>
+            Talk to the Nami chatbot </a> </div> -->
 </section>
 
       <section class="section section-alt" id="support">

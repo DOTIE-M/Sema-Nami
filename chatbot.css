@@ -1,0 +1,1548 @@
+
+/* html, body {
+    height: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+} */
+
+/* landing page elements */
+/* .support-column h2{
+    height: auto;
+} */
+
+/* .support-column{
+    height: 100%;
+} */
+#support-bot{
+    font-family: 'Archivo','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #c1adf0 50%, #b89ff1 85%, #c4b2f7 100%);
+    line-height: 22px;
+    /* background: linear-gradient(#9c73f5, #6c4fa1, #8a62d5); */
+    /* background:radial-gradient(circle at top left, #8a62d5, #8a62d5, #8a62d5); */
+    /* background: linear-gradient(to right, purple, #7622c5, rgb(206, 31, 212)); */
+    color: #fff;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 0;
+    /* overflow-y: hidden; */
+}
+
+#nami-title, #nami-text{
+        font-family:"Lobster Two", sans-serif;
+        font-weight: 600;
+  font-style: normal;
+    }
+
+/* grandmother avatar before introductory text */
+.grandmother-avatar{
+max-width: 500px;
+width: 12%;
+display: flex;
+margin: auto;
+
+}
+
+
+.display-content {
+    height: auto; /* adjust 200px to account for header/form */
+    overflow-y: auto; 
+    overflow-x: hidden;
+/* Hide scrollbar visually */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.display-content::-webkit-scrollbar {
+  display: none;
+}
+
+.header-title {
+    width: 100px;
+    position: relative;
+    left: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-title a{
+    color: #fff;
+}
+
+.header-title a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 6vw;
+}
+
+/* header{
+    display: inline-flex;
+}
+ */
+/* Floral decoration top-right */
+.floral-decoration-top {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    width: 400px;
+    height: 400px;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Floral decoration bottom-left */
+.floral-decoration-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 1000px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+
+/* .sidebar,
+main {
+    display: inline-flex;
+} */
+
+.sidebar {
+    display: inline-flex;
+    width: 100vw;
+    background: rgba(90, 89, 89, 0.1);
+    position: relative;
+    top:-3.2rem;
+    /* position: fixed; */
+    /* background: rgba(0, 0, 0, 0.1); */
+    margin-left: -0.5rem;
+    /* margin-top: -1.2rem; */
+}
+
+main{
+   position: relative;
+   top: -3rem;
+   height: 100%;
+}
+
+.dropdown {
+    display: none;
+}
+
+
+
+.home-icon {
+    margin-top: 1rem;
+    margin-left: 53vw;
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.toggle-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 140px;;
+    height: auto;
+    padding: 13px 10px 13px 10px;
+    margin: 1.2rem 1rem 1rem 1rem;
+    border-radius: 50px;
+    border: none;
+    /* text-align: left; */
+    cursor: pointer;
+}
+
+.quick-exit-link{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 1rem;
+    width: 150px;
+    height:auto;
+    padding: 10px 20px 10px 20px;
+    margin: 1.2rem 1rem;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.loading-state{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: auto;
+    font-weight: bold;
+}
+
+.display-intent {
+    /* margin: 1rem 2rem; */
+    margin: 1rem 16rem;
+}
+
+.display-content{
+    margin-left: 1rem;
+}
+
+
+/* .followup-container{
+    margin-left: 16rem;
+} */
+
+
+.display-intent p,
+.followup-container p {
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+    border-radius: 0px 0px 10px 10px;
+    width: 50vw;
+    margin: 3rem 0 2rem 2%;
+}
+
+.avatar-icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 10vh;
+    border-radius: 50px;
+}
+
+h3 {
+    color: #7622c5;
+}
+
+a:hover {
+    color: #7622c5;
+}
+
+.fallback-paragraph {
+    margin-left: 0;
+}
+
+/* quick exit button */
+.exit-link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #fff;
+    /* border: 1px solid black; */
+    width: 100px;
+    padding: 1px;
+    margin: auto;
+}
+
+.exit-link:hover {
+    color: #fff;
+    list-style: underline;
+}
+
+.exit-link,
+.clear-text,
+.safety-warning {
+    display: block;
+}
+
+/* .safety-warning {
+    text-decoration: underline;
+} */
+
+label {
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+/* #introduction-text,
+#input-field {
+    margin: 1rem 2rem;
+} */
+
+#introduction-text {
+    margin: 1rem;
+    text-align: center;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 100px;
+    padding: 4px 4px 4px 0px;
+    width: fit-content;
+    margin:auto;
+}
+
+#input-field {
+ 
+    width: 45vw;
+    height: 6vh;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14pt;
+    background: transparent; /* since the container is now white */
+    margin: auto; /* remove old margin */
+}
+
+#input-field:focus {
+    outline: none;
+}
+
+#submit-chat {
+    position: static; /* remove absolute positioning */
+    padding: 10px 12px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    /* background: #7622c5; */
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#submit-chat:hover {
+    /* background: rgb(238, 236, 236); */
+    font-weight: normal;
+    border: none;
+}
+
+
+/* clear-history button */
+.clear-history {
+    /* margin-left: 1rem; */
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    /* font-weight: bold; */
+    font-size: 12pt;
+}
+
+.clear-history:hover {
+    background: #ae8cec;
+    /* background: #7622c5; */
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* safety warning measures */
+.danger-icon,
+.safety-warning {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.danger-icon {
+    margin-top: 0.3rem;
+    /* margin-left: 12rem; */ /*centers the safety-warning*/
+}
+
+.safety-container {
+    display: inline-flex;
+    text-decoration: none;
+    /* padding: 10px; */
+}
+
+.safety-warning {
+    padding-left: 10px;
+    /* text-decoration: underline; */
+    margin-top: 0.4rem;
+}
+
+.exit-icon {
+    margin-top: 0rem;
+
+}
+
+.exit-link {
+    text-decoration: none;
+    /* margin-left: 0.5rem; */
+}
+
+.exit-link:hover {
+    text-decoration: underline;
+}
+
+.exit-container {
+    display: inline-flex;
+}
+
+.safety-container,
+.exit-container,
+.clear-text,
+.clear-history {
+    display: flex;
+    box-shadow: 1, 2, 8, rgba(0, 0, 0, 1);
+
+  /* margin: auto; */
+}
+
+/* combined safety-warning, clear history and clear browser elements */
+.combined-safety-container{
+    width: 55vw;
+    background: rgb(201, 162, 224);
+    margin-left: 14rem;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+
+.clear-text, .clear-history{
+    display: inline-flex;
+    /* margin-left: 1.8rem; */
+}
+
+.clear-history{
+    margin-left: 1rem;
+    border-radius: 20px;
+    padding:10px;
+}
+
+.phone-icon {
+    color: #22c55e;
+}
+
+.link-icon {
+    background-color: #fff;
+}
+
+/* .display-intent {
+    width: 95vw;
+    background: rgb(247, 245, 245);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    list-style: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */
+
+.form-wrapper {
+    margin: 1rem 2rem;
+}
+
+
+/* .display-intent div{
+    max-width: 80vw;
+}
+
+.response-text{
+    width: 10%;
+} */
+
+.option-button {
+    margin: 0rem 1rem;
+    /*  font-weight: bold; */
+}
+
+/* title for qa.js */
+.title{
+    margin-left: 1rem;
+}
+
+/* div containers in semanami for qa.js */
+.medical-container, .shelter-container, .counselling-container, .legal-container, .helpline-container{
+    width: 60vw;
+    background: rgb(221, 219, 219);
+    color: #000;
+    margin: 0.5em 0.5em;
+    padding: 0.5rem;
+    list-style: none;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    border-radius: 10px 0px 10px 10px;
+}
+
+/* div containers in semanami for chatbot.js */
+.shelter-div,
+.legal-div,
+.educational-div,
+.counselling-div,
+.medical-div,
+.helpline-div {
+    width: 55vw;
+    background: rgb(221, 219, 219);
+    color: #000;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    list-style: none;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.answer-container {
+    width: 75vw;
+    margin: 3.3rem -1.8rem;
+}
+
+
+.avatar-qa-icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 33.5vh;
+    left: 9rem;
+    border-radius: 50px;
+}
+
+li,
+.ans {
+    font-size: 13pt;
+}
+
+.educational-link,
+.website-resources {
+    margin: 1rem 3rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.educational-link a {
+    color: #fff;
+}
+
+.display-header {
+    margin-left: 1rem;
+    font-size: 18pt;
+}
+
+li {
+    margin-top: 0.5rem;
+}
+
+/* qa.js response paragragraph */
+.response-par{
+    color: #fff;
+}
+
+/* qa.js folllow-up buttons*/
+.followup-qa-button{
+ margin-left: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 12pt;
+   
+}
+
+.follow-qa-button:hover {
+    background: #8a62d5;
+    /* background: #7622c5; */
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.followup-container div{
+margin-left: 14rem;
+}
+
+.followup-container button{
+margin-left: 1rem;
+}
+
+/* chatbot.js follow-up buttons*/
+.option-button,
+.follow-up {
+    margin-right: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 12pt;
+    /*  background-color: #fff; */
+}
+
+.follow-up{
+     margin: 0.5rem 0 1rem 0.5rem;
+}
+
+/* followup-buttons-container{
+    margin-left: 0;
+} */
+
+.option-button:hover,
+.follow-up:hover {
+    background: #8a62d5;
+    /* background: #7622c5; */
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.option-button:focus-visible,
+.follow-up:focus-visible {
+    /* background: #c522af; */
+    background: #000;
+    color: #7622c5;
+    border: 1px solid #fff;
+}
+
+
+.image-container {
+    max-width: 1600px;
+    height: 800px;
+    position: absolute;
+    right: 2px;
+    top: -17rem;
+}
+
+.ui-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+.fallback-link {
+    color: #000;
+    text-decoration: underline;
+}
+
+.fallback-link:hover {
+    color: #000;
+}
+
+
+@media (max-width: 480px) {
+    /* html, body {
+    height: 100%;
+    overflow: hidden;
+} */
+
+body{
+font-size: 14pt;
+}
+
+ .header-title {
+        /* margin-left: 2.5rem; */
+        width: 100px;
+        top: 0.5rem;
+        left: 1rem;
+        /* left: -12vw; */
+        /* margin-top: 0rem; */
+        font-size: 23pt;
+    }
+
+    
+
+.dropdown{
+    display: block;
+    margin-top:2rem;
+}
+
+.dropdown-toggle{
+    margin-left: 55vw;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.dropdown ul{
+    position: relative;
+    left: 2.5rem;
+    display: none;
+    margin: 0.5rem 0rem 1rem 2rem;
+    border:1px solid #c38df7;
+    /* border: 1px solid rgb(155, 148, 148); */
+}
+
+.dropdown li{
+   list-style-type: none;
+    border-bottom:1px solid #c38df7;
+    /* border-bottom: 1px solid rgb(155, 148, 148); */
+    margin-left: -2.4rem;
+    padding: 10px;
+}
+
+.dropdown-home-icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 2rem;
+}
+
+.dropdown-home-link, .dropdown-home-icon{
+    display: inline-flex;
+}
+
+.dropdown-home-link{
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+}
+
+.dropdown-quick-exit-link{
+font-size: 15pt;
+margin: 3rem;
+}
+
+.toggle-language{
+    padding: 10px;
+    font-size: 12pt;
+}
+
+.floral-decoration-bottom{
+    display: none;
+}
+
+    /* html {
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+    }
+
+    body{
+        height: auto;
+        overflow: hidden;
+    } */
+
+    main {
+        margin-left: 0rem;
+    }
+
+    .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    .image-container {
+    display: none; /* hide on mobile since the img is commented out anyway */
+}
+    .quick-exit-link{
+        display: none;
+    }
+    
+    .home-icon {
+        margin-left: -0.2rem;
+        width: 50px;   
+        display: none;
+    }
+
+    #main-toggle-language {
+        right: -54vw;
+        height: 30px;
+        margin-top: 1.9rem;
+        /* margin-left: -0.7rem; */
+        padding: 20px 18px;
+        display: none;
+    }
+
+    #introduction-text {
+        width: 50vw;
+        margin: 0.5rem;
+        text-align: center;
+        text-wrap: wrap;
+    }
+
+    #input-container{
+        width:88vw;
+        margin: auto;
+        padding-left: 8px;
+    }
+
+    #input-field {
+        /* margin: 0.5rem -1.5rem; */
+        width: 55vw;
+    }
+
+    #submit-chat{
+        width: 10vw;
+        background: none;
+    }
+
+    /* #submit-chat {
+        top: 14%;
+        left: 75vw;
+    } */
+
+
+    .avatar-icon {
+        top: 3.5rem;
+    }
+
+.grandmother-avatar{
+max-width: 500px;
+width: 40%;
+display: flex;
+margin: 0.5rem auto;
+
+}
+
+    .display-header {
+        margin: 1rem 0.8rem;
+    }
+
+    .display-intent {
+        margin: 0;
+        
+    }
+
+    .display-intent p,
+.followup-container p {
+    background: #fff;
+    color: #000;
+    padding: 1rem 0.5rem 1rem 1rem;
+    border-radius: 0px 0px 10px 10px;
+    width: 65vw;
+
+}
+
+
+    .followup-container {
+    margin-left: 0;
+}
+
+.followup-container div{
+margin-left: 0.5rem;
+}
+
+    .display-content {
+    height: calc(100vh - 180px); 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+    /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+    /* styling for title, follow up buttons and containers for qa.js */
+    .title{
+        margin-left: 0.3rem;
+    }
+
+    .followup-qa-button{
+        margin-left: 0.5rem;
+    }
+
+     .medical-container, .shelter-container, .counselling-container, .legal-container{
+        width: 80vw;
+        margin-left: -0.5rem;
+        margin-bottom: 1rem;
+        padding: 5px 10px;
+     }
+
+    .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin: 1rem 1rem;
+        padding: 5px 10px;
+    }
+
+    .follow-up {
+        display: flex;
+        margin: 0.5rem;
+    }
+
+    .option-button {
+        display: flex;
+        margin: 0.5rem;
+    }
+
+    .safety-container,
+    .exit-container,
+    .clear-text,
+    .clear-history {
+        display: flex;
+        box-shadow: 1, 2, 8, rgba(0, 0, 0, 1);
+        margin-left: 0.5rem;
+    }
+
+    .combined-safety-container{
+    width: 85vw;
+    background: rgb(201, 162, 224);
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+
+}
+
+@media(min-width: 320px) and (max-width: 350px) {
+      /* html, body{
+        overflow: hidden;
+    } */
+
+    .floral-decoration-bottom{
+    display: none;
+}
+
+    .image-container {
+    display: none; /* hide on mobile since the img is commented out anyway */
+}
+
+    .display-content {
+    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+      /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+     .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    /* .header-title {
+        margin-left: 12rem;
+        margin-top: 0.3rem;
+        font-size: 20pt;
+    } */
+
+     #introduction-text {
+        margin: 0.5rem -1.8rem;
+        width: 80vw;
+    }
+
+    
+    #input-container{
+        margin-left: -1.5rem;
+        padding-left: 8px;
+    }
+
+    #input-field {
+        /* margin: 0.5rem -1.8rem;
+        width: 80vw; */
+        width: 55vw; 
+    }
+
+    #submit-chat {
+        width: 20vw;
+        /* top: 27%;
+        left: 75vw; */
+    }
+
+    /* .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin-left: -0.5rem;
+    } */
+
+    .clear-text{
+      width: 80vw;
+    }
+}
+
+@media(min-width: 350px) and (max-width: 359px) {
+      /* html, body{
+        height: 100%;
+        overflow: hidden;
+    } */
+
+    .floral-decoration-bottom{
+    display: none;
+}
+
+    .image-container {
+    display: none; /* hide on mobile since the img is commented out anyway */
+}
+
+    .display-content {
+    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+    /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+    .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    /* .header-title {
+        margin-left: 2.5rem;
+        margin-top: 0.5rem;
+        font-size: 20pt;
+    } */
+
+     #introduction-text {
+        margin: 0.5rem -1.4rem;
+        width: 72vw;
+    }
+
+    
+    #input-container{
+        margin-left: -1.5rem;
+        padding-left: 8px;
+    }
+
+    #input-field {
+        /* margin: 0.5rem -1.4rem;
+        width: 74vw; */
+        width: 55vw; 
+    }
+
+    #submit-chat {
+        width: 20vw;
+        /* top: 20%;
+        left: 72vw; */
+    }
+
+    .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin-left: -0.5rem;
+    }
+
+    .clear-text{
+      width: 80vw;
+    }
+}
+
+@media(min-width: 360px) and (max-width: 369px) {
+      /* html, body{
+        height: 100%;
+        overflow: hidden;
+    } */
+
+    .floral-decoration-bottom{
+    display: none;
+}
+
+    .image-container {
+    display: none; /* hide on mobile since the img is commented out anyway */
+}
+
+    .display-content {
+    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+      /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+     .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    /* .header-title {
+        margin-left: 2.5rem;
+        margin-top: 0.5rem;
+        font-size: 20pt;
+    } */
+
+     #introduction-text {
+        margin: 0.5rem -1.4rem;
+        width: 90vw;
+    }
+
+    
+    #input-container{
+        margin-left: -1.5rem;
+        padding-left: 4px;
+    }
+
+    #input-field {
+        /* margin: 0.5rem -1.8rem;
+        width: 77vw; */
+        width: 55vw; 
+    }
+
+
+    #submit-chat {
+        width: 20vw;
+        /* top: 18%;
+        left: 74vw; */
+    }
+
+    /* .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin-left: -0.5rem;
+    } */
+
+    .clear-text{
+      width: 80vw;
+    }
+}
+
+@media(min-width: 370px) and (max-width: 380px) {
+     /* html, body{
+        height: 100%;
+        overflow: hidden;
+    } */
+
+    .floral-decoration-bottom{
+    display: none;
+}
+
+    .image-container {
+    display: none; /* hide on mobile since the img is commented out anyway */
+}
+
+    .display-content {
+    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+      /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+     .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    /* .header-title {
+        margin-left: 2.5rem;
+        margin-top: 0.5rem;
+        font-size: 20pt;
+    } */
+
+     #introduction-text {
+        margin: 0.5rem -1.5rem;
+        width: 88vw;
+    }
+
+    
+    #input-container{
+        margin-left: -1.5rem;
+        padding-left: 4px;
+    }
+
+    #input-field {
+        /* margin: 0.5rem -1.5rem;
+        width: 74vw; */
+        width: 55vw; 
+    }
+
+    #submit-chat {
+        width: 20vw;
+        /* top: 20%;
+        left: 70vw; */
+    }
+
+    /* .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin-left: -0.5rem;
+    } */
+
+    .clear-text{
+      width: 80vw;
+    }
+}
+
+
+@media(min-width: 381px) and (max-width: 389px) {
+      /* html, body{
+        height: 100%;
+        overflow: hidden;
+    } */
+
+    .floral-decoration-bottom{
+    display: none;
+}
+
+    .image-container {
+    display: none; /* hide on mobile since the img is commented out anyway */
+}
+
+    .display-content {
+    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+      /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+     .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    /* .header-title {
+        margin-left: 2.5rem;
+        margin-top: 0.4rem;
+        font-size: 20pt;
+    } */
+
+     #introduction-text {
+        margin: 0.5rem -1.4rem;
+        width: 78vw;
+    }
+
+    
+    #input-container{
+        margin-left: -1.5rem;
+        padding-left: 8px;
+    }
+
+    #input-field {
+        /* margin: 0.5rem -1.6rem;
+        width: 75vw; */
+        width: 55vw; 
+    }
+
+    #submit-chat {
+        width: 20vw;
+        /* top: 15%;
+        left: 68vw; */
+    }
+
+    /* .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin-left: -0.5rem;
+    } */
+
+    .clear-text{
+      width: 80vw;
+    }
+}
+@media (max-width: 390px) {
+      /* html, body{
+        height: 100%;
+        overflow: hidden;
+    } */
+
+    .floral-decoration-bottom{
+    display: none;
+}
+
+    .image-container {
+    display: none; /* hide on mobile since the img is commented out anyway */
+}
+
+    .display-content {
+    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+      /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+     .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    /* .header-title {
+        margin-left: 2.5rem;
+        margin-top: 0.5rem;
+        font-size: 20pt;
+    } */
+
+     #introduction-text {
+        margin: 0.5rem -1.5rem;
+        width: 88vw;
+    }
+
+    
+    #input-container{
+        margin-left: -1.5rem;
+        padding-left: 4px;
+    }
+
+    #input-field {
+        /* margin: 0.5rem -1.8rem;
+        width: 80vw; */
+        width: 55vw; 
+    }
+
+    #submit-chat {
+        width: 20vw;
+        /* top: 17%;
+        left: 72vw; */
+    }
+
+    /* .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin-left: -0.5rem;
+    } */
+
+    .clear-text{
+      width: 80vw;
+    }
+}
+
+@media(min-width: 391px) and (max-width: 420px) {
+
+      /* html, body{
+        height: 100%;
+        overflow: hidden;
+    } */
+
+    .floral-decoration-bottom{
+    display: none;
+}
+
+    .image-container {
+    display: none; /* hide on mobile since the img is commented out anyway */
+}
+
+    .display-content {
+    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+      /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+     .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    /* .header-title {
+        margin-left: 2.5rem;
+        margin-top: 0.5rem;
+        font-size: 20pt;
+    } */
+
+     #introduction-text {
+        margin: 0.5rem -1.5rem;
+        width: 82vw;
+    }
+
+    
+    #input-container{
+        margin-left: -1.5rem;
+        padding-left: 4px;
+    }
+
+    #input-field {
+        /* margin: 0.5rem -1.6rem;
+        width: 80vw; */
+        width: 55vw; 
+    }
+
+    #submit-chat {
+        width: 20vw;
+        /* top: 18%;
+        left: 74vw; */
+    }
+
+    /* .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin-left: -0.5rem;
+    } */
+
+    .clear-text{
+      width: 80vw;
+    }
+}
+
+
+@media(min-width: 421px) and (max-width: 431px) {
+      /* html, body{
+        height: 100%;
+        overflow: hidden;
+    } */
+
+    .floral-decoration-bottom{
+    display: none;
+}
+
+    .image-container {
+    display: none; /* hide on mobile since the img is commented out anyway */
+}
+    
+    .display-content {
+    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+      /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+     .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    /* .header-title {
+        margin-left: 2.5rem;
+        margin-top: 0.4rem;
+        font-size: 20pt;
+    } */
+
+     #introduction-text {
+        margin: 0.5rem -1.4rem;
+        width: 80vw;
+    }
+
+    
+    #input-container{
+        margin-left: -1.5rem;
+    }
+
+    #input-field {
+        /* margin: 0.5rem -1.8rem;
+        width: 80vw; */
+       padding-left: 4px;
+        width: 55vw; 
+    }
+
+    #submit-chat {
+        width: 20vw;
+        /* top: 17%;
+        left: 75vw; */
+    }
+
+    /* .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin-left: -0.5rem;
+    } */
+
+    .clear-text{
+      width: 80vw;
+    }
+}
+
+@media(min-width: 431px) and (max-width: 449px) {
+    /* html, body{
+        height: 100%;
+        overflow: hidden;
+    } */
+
+    .floral-decoration-bottom{
+    display: none;
+}
+    
+    .display-content {
+    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+      /* .display-content{
+        height: auto;
+        overflow-y: hidden;
+    } */
+
+     .sidebar {
+        display: inline-flex;
+        background: none;
+    }
+
+    /* .header-title {
+        margin-left: 2.5rem;
+        margin-top: 0.5rem;
+        font-size: 20pt;
+    } */
+
+     #introduction-text {
+        margin: 0.5rem -1.4rem;
+        width: 88vw;
+    }
+
+    
+    #input-container{
+        margin-left: -1.5rem;
+    }
+
+    #input-field {
+        padding-left: 4px;
+        width: 55vw;
+        /* margin: 0.5rem -1.6rem;
+        width: 76vw; */
+    }
+
+    #submit-chat {
+        width: 20vw;
+        /* top: 15%;
+        left: 72vw; */
+    }
+
+    /* .shelter-div,
+    .legal-div,
+    .educational-div,
+    .counselling-div,
+    .medical-div,
+    .helpline-div {
+        width: 80vw;
+        margin-left: -0.5rem;
+    } */
+
+    .clear-text{
+      width: 80vw;
+    }
+}
