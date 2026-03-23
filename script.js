@@ -42,23 +42,6 @@ function showToast(message, type = "success") {
   }, 4500);
 }
 
-// Chatbot link behaviour
-const CHATBOT_URL = "https://semanami.gtech-prc.org/"; // TODO: replace with your real chatbot URL
-
-const chatbotButton = document.getElementById("chatbot-link-btn");
-if (chatbotButton) {
-  chatbotButton.addEventListener("click", () => {
-    if (!CHATBOT_URL || CHATBOT_URL === "#") {
-      showToast(
-        "Chatbot link is not yet configured. Update CHATBOT_URL in script.js.",
-        "danger"
-      );
-      return;
-    }
-    window.open(CHATBOT_URL, "_blank", "noopener");
-  });
-}
-
 const bookingSummary = document.getElementById("booking-summary");
 const whatsappNotes = document.getElementById("whatsapp-notes");
 const whatsappBookingBtn = document.getElementById("whatsapp-booking-btn");

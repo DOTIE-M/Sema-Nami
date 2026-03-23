@@ -300,20 +300,23 @@ main {
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
   gap: 3rem;
   align-items: center;
+  
 }
-
-.hero-avatar-wrap {
-  margin-bottom: 1.25rem;
-}
+ 
+.hero-avatar-wrap { 
+   margin-bottom: 1.25rem; 
+ }  
 
 .hero-avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 12px 32px rgba(76, 45, 146, 0.25);
-}
+  margin-left: 3rem;
+  z-index:3;
+   /* border: 3px solid rgba(255, 255, 255, 0.9);
+   box-shadow: 0 12px 32px rgba(76, 45, 146, 0.25);  */
+} 
 
 .hero-visual {
   display: flex;
@@ -327,7 +330,7 @@ main {
   overflow: hidden;
   background: radial-gradient(circle at top left, #e8dcff, #cbaaff, #8a62d5);
   aspect-ratio: 4 / 5;
-  box-shadow: 0 26px 70px rgba(76, 45, 146, 0.45);
+   box-shadow: 0 26px 70px rgba(76, 45, 146, 0.45); 
 }
 
 .hero-image-circle {
