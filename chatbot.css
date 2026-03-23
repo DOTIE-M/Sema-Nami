@@ -493,6 +493,30 @@ a:hover {
     border-radius: 10px 0px 10px 10px;
 }
 
+.display-list-header{
+ margin: 1rem 10rem;
+}
+
+/* div containers in semanami for listing resources in chatbot.js */
+.list-shelter-div,
+.list-legal-div,
+.list-educational-div,
+.list-counselling-div,
+.list-medical-div,
+.list-helpline-div {
+    width: 60vw;
+    background: rgb(221, 219, 219);
+    color: #000;
+    /* background: rgb(197, 70, 176); 
+    color: #fff; */
+    /* margin: 1rem auto; */
+    margin: 1rem 10rem;
+    padding: 0.5rem;
+    list-style: none;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    border-radius: 10px 0px 10px 10px;
+}
+
 .list-shelter-div,
 .list-legal-div,
 .list-educational-div,
