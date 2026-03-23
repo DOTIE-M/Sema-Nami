@@ -414,6 +414,9 @@ a:hover {
 /* combined safety-warning, clear history and clear browser elements */
 .combined-safety-container{
     width: 55vw;
+    /* background: #fff8ed;
+    color: #000; */
+
     background: rgb(201, 162, 224);
     margin-left: 14rem;
     padding: 2px 10px;
