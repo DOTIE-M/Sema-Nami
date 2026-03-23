@@ -14,6 +14,7 @@
     height: 100%;
 } */
 #support-bot{
+    height: 100%;
     font-family: 'Archivo','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #c1adf0 50%, #b89ff1 85%, #c4b2f7 100%);
     line-height: 22px;
