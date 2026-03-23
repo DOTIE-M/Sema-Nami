@@ -402,6 +402,15 @@ a:hover {
   /* margin: auto; */
 }
 
+
+.list-safety-container{
+ width: 50vw;
+    background: rgb(201, 162, 224);
+    margin-left: 12rem;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
 /* combined safety-warning, clear history and clear browser elements */
 .combined-safety-container{
     width: 55vw;
