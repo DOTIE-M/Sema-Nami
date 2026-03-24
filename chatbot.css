@@ -288,7 +288,8 @@ label {
     border: none;
     border-radius: 50px;
     font-size: 14pt;
-    background: transparent; /* since the container is now white */
+    background: transparent;
+    outline: none;
     margin: auto; /* remove old margin */
 }
 
