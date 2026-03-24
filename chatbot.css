@@ -282,7 +282,6 @@ label {
 }
 
 #input-field {
- 
     width: 45vw;
     height: 6vh;
     padding: 10px 10px 10px 40px;
@@ -295,6 +294,7 @@ label {
 
 #input-field:focus {
     outline: none;
+    border: none;
 }
 
 #submit-chat {
