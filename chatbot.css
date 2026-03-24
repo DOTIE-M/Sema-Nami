@@ -293,6 +293,11 @@ label {
     margin: auto; /* remove old margin */
 }
 
+#input-field:active{
+    outline: none;
+    border: none;
+}
+
 #input-field:focus {
     outline: none;
     border: none;
