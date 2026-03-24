@@ -288,7 +288,7 @@ label {
     border: none;
     border-radius: 50px;
     font-size: 14pt;
-    background: transparent;
+    background: none;
     outline: none;
     margin: auto; /* remove old margin */
 }
