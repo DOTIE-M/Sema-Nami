@@ -408,7 +408,7 @@ a:hover {
 .list-safety-container{
  width: 50vw;
     background: rgb(201, 162, 224);
-    margin-left: 12rem;
+    margin-left: 14rem;
     padding: 2px 10px;
     border-radius: 10px;
 }
@@ -508,7 +508,7 @@ a:hover {
 }
 
 .display-list-header{
- margin: 1rem 14rem;
+ margin: 1rem 16rem;
 }
 
 /* div containers in semanami for listing resources in chatbot.js */
