@@ -165,7 +165,7 @@ main{
 }
 
 .toggle-language:hover {
- background:#ad5cf8;
+ background:#a164da;
  color: #fff;
 }
 
@@ -185,7 +185,8 @@ main{
 }
 
 .quick-exit-link:hover {
- background:#ad5cf8;
+    background:#a164da;
+ /* background:#ad5cf8; */
  color: #fff;
  text-decoration: none;
 }
@@ -355,7 +356,7 @@ label {
 }
 
 .clear-history:hover {
-    background: #ae8cec;
+    background:#ad83d4;
     /* background: #7622c5; */
     color: #fff;
     border: 1px solid #fff;
@@ -799,6 +800,24 @@ margin: 3rem;
 .toggle-language{
     padding: 10px;
     font-size: 12pt;
+}
+
+.dropdown-home-icon:hover {
+ transform:scale(1.2, 1.2);
+}
+
+
+#dropdown-toggle-language:hover {
+ background:#a164da;
+ color: #fff;
+}
+
+
+.dropdown-quick-exit-link:hover {
+    background:#a164da;
+ /* background:#ad5cf8; */
+ color: #fff;
+ text-decoration: none;
 }
 
 .floral-decoration-bottom{
