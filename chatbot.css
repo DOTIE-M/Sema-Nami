@@ -189,8 +189,13 @@ main{
     margin: 1rem 15rem;
 }
 
+/*removes the extra-space below the combined-safe-container*/
 .display-content{
+    height: auto; 
+    overflow-y: hidden;
+    overflow-x: hidden;
     margin-left: 1rem;
+    margin-bottom: -6rem; 
 }
 
 
@@ -665,14 +670,18 @@ margin-left: 1rem;
 
 
 @media (max-width: 480px) {
-    /* html, body {
+    /* html{
     height: 100%;
     overflow: hidden;
-} */
+}  */
 
 body{
 font-size: 14pt;
 }
+
+ main {
+        margin-left: 0rem;
+    }
 
  .header-title {
         /* margin-left: 2.5rem; */
@@ -686,14 +695,52 @@ font-size: 14pt;
 
     
 
+
+    .fallback-paragraph {
+    margin-left: 1rem;
+}
+
+.fallback-paragraph p{
+    width: 90vw;
+}
+
+    .display-list-header{
+ margin: 1rem 1rem;
+}
+
+.list-shelter-div,
+.list-legal-div,
+.list-educational-div,
+.list-counselling-div,
+.list-medical-div,
+.list-helpline-div {
+    width: 85vw;
+    background: rgb(221, 219, 219);
+    color: #000;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    list-style: none;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    border-radius: 10px 0px 10px 10px;
+}
+
+
+.list-safety-container{
+ width: 85vw;
+    background: rgb(201, 162, 224);
+    margin-left: 1rem;
+    padding: 2px 10px;
+    border-radius: 10px;
+}  
+
 .dropdown{
     display: block;
-    margin-top:2rem;
+    margin-top:1.5rem;
 }
 
 .dropdown-toggle{
     margin-left: 55vw;
-    padding: 10px;
+    padding: 8px;
     border-radius: 10px;
     border: none;
 }
@@ -756,9 +803,7 @@ margin: 3rem;
         overflow: hidden;
     } */
 
-    main {
-        margin-left: 0rem;
-    }
+   
 
     .sidebar {
         display: inline-flex;
@@ -796,7 +841,7 @@ margin: 3rem;
 
     #input-container{
         width:88vw;
-        margin: auto;
+        margin: 1.5rem auto;
         padding-left: 8px;
     }
 
@@ -817,7 +862,7 @@ margin: 3rem;
 
 
     .avatar-icon {
-        top: 3.5rem;
+        top: 4.5rem;
     }
 
 .grandmother-avatar{
@@ -828,12 +873,18 @@ margin: 0.5rem auto;
 
 }
 
+
+.answer-container {
+    width: 75vw;
+    margin: 3.3rem 1rem;
+}
+
     .display-header {
         margin: 1rem 0.8rem;
     }
 
     .display-intent {
-        margin: 0;
+        margin: 1rem;
         
     }
 
@@ -843,22 +894,22 @@ margin: 0.5rem auto;
     color: #000;
     padding: 1rem 0.5rem 1rem 1rem;
     border-radius: 0px 0px 10px 10px;
-    width: 65vw;
+    width: 80vw;
 
 }
 
 
-    .followup-container {
-    margin-left: 0;
+.followup-container {
+    margin-left: 1rem;
 }
 
 .followup-container div{
 margin-left: 0.5rem;
 }
 
-    .display-content {
-    height: calc(100vh - 180px); 
-    overflow-y: auto;
+.display-content {
+    height: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -877,7 +928,7 @@ margin-left: 0.5rem;
     }
 
      .medical-container, .shelter-container, .counselling-container, .legal-container{
-        width: 80vw;
+        width: 85vw;
         margin-left: -0.5rem;
         margin-bottom: 1rem;
         padding: 5px 10px;
@@ -914,11 +965,11 @@ margin-left: 0.5rem;
     }
 
     .combined-safety-container{
-    width: 85vw;
+    width: 90vw;
     background: rgb(201, 162, 224);
-    padding: 2px 10px;
+    padding: 2px 14px 2px 10px;
     border-radius: 10px;
-    margin: 0;
+    margin: 2.5rem 1rem 0 0.5rem;
 }
 
 
@@ -937,11 +988,11 @@ margin-left: 0.5rem;
     display: none; /* hide on mobile since the img is commented out anyway */
 }
 
-    .display-content {
-    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    /* .display-content {
+    height: calc(100vh - 180px); 
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
       /* .display-content{
         height: auto;
         overflow-y: hidden;
@@ -1010,11 +1061,11 @@ margin-left: 0.5rem;
     display: none; /* hide on mobile since the img is commented out anyway */
 }
 
-    .display-content {
-    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    /* .display-content {
+    height: calc(100vh - 180px); 
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
     /* .display-content{
         height: auto;
         overflow-y: hidden;
@@ -1083,11 +1134,11 @@ margin-left: 0.5rem;
     display: none; /* hide on mobile since the img is commented out anyway */
 }
 
-    .display-content {
-    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    /* .display-content {
+    height: calc(100vh - 180px); 
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
 
       /* .display-content{
         height: auto;
@@ -1158,11 +1209,11 @@ margin-left: 0.5rem;
     display: none; /* hide on mobile since the img is commented out anyway */
 }
 
-    .display-content {
-    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    /* .display-content {
+    height: calc(100vh - 180px); 
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
 
       /* .display-content{
         height: auto;
@@ -1233,11 +1284,11 @@ margin-left: 0.5rem;
     display: none; /* hide on mobile since the img is commented out anyway */
 }
 
-    .display-content {
-    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    /* .display-content {
+    height: calc(100vh - 180px); 
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
 
       /* .display-content{
         height: auto;
@@ -1306,11 +1357,11 @@ margin-left: 0.5rem;
     display: none; /* hide on mobile since the img is commented out anyway */
 }
 
-    .display-content {
-    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    /* .display-content {
+    height: calc(100vh - 180px);
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
 
       /* .display-content{
         height: auto;
@@ -1381,11 +1432,11 @@ margin-left: 0.5rem;
     display: none; /* hide on mobile since the img is commented out anyway */
 }
 
-    .display-content {
-    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    /* .display-content {
+    height: calc(100vh - 180px);
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
 
 
       /* .display-content{
@@ -1457,11 +1508,11 @@ margin-left: 0.5rem;
     display: none; /* hide on mobile since the img is commented out anyway */
 }
     
-    .display-content {
-    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    /* .display-content {
+    height: calc(100vh - 180px); 
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
 
       /* .display-content{
         height: auto;
@@ -1527,11 +1578,11 @@ margin-left: 0.5rem;
     display: none;
 }
     
-    .display-content {
-    height: calc(100vh - 180px); /* slightly less offset on mobile */
+    /* .display-content {
+    height: calc(100vh - 180px); 
     overflow-y: auto;
     overflow-x: hidden;
-}
+} */
 
       /* .display-content{
         height: auto;
