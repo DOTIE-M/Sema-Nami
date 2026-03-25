@@ -145,6 +145,10 @@ main{
     cursor: pointer;
 }
 
+.home-icon:hover {
+ transform:scale(1.2, 1.2);
+}
+
 .toggle-language {
     display: flex;
     justify-content: center;
@@ -160,6 +164,11 @@ main{
     cursor: pointer;
 }
 
+.toggle-language:hover {
+ background:#ad5cf8;
+ color: #fff;
+}
+
 .quick-exit-link{
     display: flex;
     justify-content: center;
@@ -173,6 +182,12 @@ main{
     border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
+}
+
+.quick-exit-link:hover {
+ background:#ad5cf8;
+ color: #fff;
+ text-decoration: none;
 }
 
 .loading-state{
