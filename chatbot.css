@@ -312,13 +312,9 @@ label {
     background: none;
     outline: none;
     margin: auto; /* remove old margin */
+    box-shadow: none;
 }
 
-
-#input-field:focus {
-    outline: none;
-    border: none;
-}
 
 #submit-chat {
     position: static; /* remove absolute positioning */
@@ -878,6 +874,7 @@ margin: 3rem;
     }
 
     #input-field {
+        outline: none;
         /* margin: 0.5rem -1.5rem; */
         width: 55vw;
     }
