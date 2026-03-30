@@ -40,6 +40,39 @@ body {
   overflow-x: hidden;
 }
 
+/* toggle translation */
+.lang-toggle{
+  display: inline-flex;
+}
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border: 1.5px solid #A78BFA;
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+    }
+ 
+    .lang-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 5px 14px;
+      border-radius:  999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      font-family: 'DM Sans', sans-serif;
+      color: #7C3AED;
+      transition: transparent 0.2s, color 0.2s;
+      letter-spacing: 0.04em;
+    }
+ 
+    .lang-btn.active {
+      background: #7C3AED;
+      color: #fff;
+    }
+
 .page-background {
   position: fixed;
   inset: 0;
@@ -233,6 +266,7 @@ body {
     color 0.2s ease,
     border-color 0.2s ease;
   white-space: nowrap;
+  
 }
 
 .btn-lg {
@@ -304,7 +338,9 @@ main {
 }
  
 .hero-avatar-wrap { 
-   margin-bottom: 1.25rem; 
+  display: flex;
+  justify-content:center;
+   margin-top: -6rem; 
  }  
 
 .hero-avatar {
@@ -312,8 +348,7 @@ main {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-left: 3rem;
-  z-index:3;
+  margin-left: -6rem;
    /* border: 3px solid rgba(255, 255, 255, 0.9);
    box-shadow: 0 12px 32px rgba(76, 45, 146, 0.25);  */
 } 
@@ -322,6 +357,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-top: 3rem;
 }
 
 .hero-image-card {
@@ -1007,6 +1043,14 @@ textarea:focus {
     bottom: 1.15rem;
     right: 0.9rem;
   }
+
+  .hero-avatar-wrap { 
+   margin-top: 1rem; 
+ } 
+
+ .hero-avatar{
+  margin: auto;
+ }
 }
 
 @media (max-width: 880px) {

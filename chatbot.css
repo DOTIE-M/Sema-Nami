@@ -22,7 +22,7 @@
     /* background:radial-gradient(circle at top left, #8a62d5, #8a62d5, #8a62d5); */
     /* background: linear-gradient(to right, purple, #7622c5, rgb(206, 31, 212)); */
     color: #fff;
-    height: auto;
+    /* height: auto; */
     overflow-x: hidden;
     position: relative;
     top: 0;
@@ -207,7 +207,7 @@ main{
 
 /*removes the extra-space below the combined-safe-container*/
 .display-content{
-    height: auto; 
+    height: 100%; 
     overflow-y: hidden;
     overflow-x: hidden;
     margin-left: 1rem;

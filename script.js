@@ -88,3 +88,23 @@ document.querySelectorAll(".quick-exit-btn").forEach((btn) => {
     window.location.href = "https://www.google.com";
   });
 });
+
+
+//create a toggle for swahili options
+function setLang(lang){
+  document.getElementById("btn-en").classList.toggle('active', lang === 'en')
+  document.getElementById("btn-sw").classList.toggle('active', lang === 'sw')
+
+  document.querySelectorAll('.lang-fade').forEach(el => {
+    const text = el.dataset[lang]
+
+    if(!text) return;
+
+    el.style.opacity = '0';
+    setTimeout(() => {
+      el.innerHTML = text;
+      el.style.transition = 'opacity 0.25s ease';
+      el.style.opacity = '1';
+    }, 200)
+  })
+}

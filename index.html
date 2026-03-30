@@ -39,28 +39,40 @@
           <span class="logo-mark">SN</span>
           <div class="logo-text">
             <span class="logo-title">Sema Nami</span>
-            <span class="logo-subtitle">A safe space to be heard</span>
+            <span class="logo-subtitle lang-fade" data-en="A safe space to be heard" data-sw="Mahali pema pa kuskizwa" >A safe space to be heard</span>
+            <!-- <span class="logo-subtitle">Mahali pema pa kuskizwa</span> -->
           </div>
         </div>
         <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#how-it-works">How it works</a>
-          <a href="#support">Get support</a>
+          <a href="#about" class="lang-fade" data-en="About" data-sw="Kuhusu">About</a>
+          <a href="#how-it-works" class="lang-fade" data-en="How it works" data-sw="Jinsi inavyofanya kazi">How it works</a>
+          <a href="#support"  class="lang-fade" data-en="Get Support" data-sw="Pata msaada">Get support</a>
         </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Language selector">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="btn-sw" onclick="setLang('sw')">SW</button>
+      </div>
+
+
         <div class="nav-cta">
           <a
-            class="btn btn-outline"
+            class="btn btn-outline lang-fade"
             href="#support-bot"
             target="_blank"
             rel="noopener"
+            data-en="Talk to Nami"
+            data-sw="Zungumza na Nami"
           >
             Talk to Nami
           </a>
           <a
-            class="btn btn-primary"
+            class="btn btn-primary lang-fade"
             href="https://wa.me/254742004353?text=Hello%2C%20I%20would%20like%20to%20request%20a%20confidential%20therapy%20session%20via%20Sema%20Nami."
             target="_blank"
             rel="noopener"
+            data-en="Book a Session"
+            data-sw="Hifadhi Kikao"
           >
             Book a session
           </a>
@@ -72,20 +84,80 @@
     </header>
 
     <main>
+      
       <section class="hero" id="top">
+         <!-- <div class="hero-avatar-wrap">
+              <img src="images/grandmother.png" alt="Sema Nami" class="hero-avatar" />
+            </div> -->
+           <!-- left hero section with swahili translation -->
         <div class="container hero-inner">
           <div class="hero-text">
             <div class="hero-avatar-wrap">
               <img src="images/grandmother.png" alt="Sema Nami" class="hero-avatar" />
             </div>
-            <h1>
+            <h1 class="lang-fade" data-en="You are not alone,<br/>Nami is here to help." data-sw="Hauko pekee yako,<br>Nami yuko hapa kukusaidia.">
               You are not alone,<br />
               Nami is here to help. 
             </h1>
-            <p class="hero-subtitle">
+            <p 
+            class="hero-subtitle lang-fade" 
+            data-en="Sema Nami is a trauma-informed chatbot companion that helps survivors of gender-based violence find information, coping tools, and pathways to professional help at their own pace."
+            data-sw="Sema Nami ni msaidizi wa mazungumzo anayeelewa majeraha ya kisaikolojia ambaye husaidia wanaonusurika na unyanyasaji wa kijinsia kupata taarifa, zana za kukabiliana na hali, na njia za kupata msaada wa kitaalamu kwa kasi yao wenyewe."
+            >
           <strong>Sema Nami</strong> is a trauma‑informed chatbot companion that helps survivors of
               gender‑based violence find information, coping tools, and
               pathways to professional help at their own pace.
+            </p>
+            <div class="hero-actions">
+              <div class="classList"></div>
+              <a
+                class="btn btn-primary btn-lg lang-fade"
+                href="https://semanami-bot.gtech-prc.org/"
+                target="_blank"
+                rel="noopener"
+                data-en="Start safe chat"
+                data-sw="Anza Mazungumzo Salama"
+              >
+                Start safe chat
+              </a>
+              <a
+                class="btn btn-ghost btn-lg lang-fade"
+                href="https://wa.me/254742004353?text=Hello%2C%20I%20would%20like%20to%20request%20a%20confidential%20therapy%20session%20via%20Sema%20Nami."
+                target="_blank"
+                rel="noopener"
+                data-en="Book a session"
+                data-sw="Hifadhi Kikao"
+              >
+                Book a session
+              </a>
+            </div>
+            <div class="hero-trust">
+              <div class="trust-item lang-fade" data-en="Anonymous & confidential" data-sw="Bila jina &amp; siri">
+                <span class="trust-dot"></span> Anonymous & confidential
+              </div>
+              <div class="trust-item lang-fade" data-en="24/7 chat bot companion" data-sw="Msaidizi masaa 24/7">
+                <span class="trust-dot"></span> 24/7 chat bot companion
+              </div>
+              <div class="trust-item lang-fade" data-en="Curated GBV resources" data-sw="Rasilimali za GBV zilizochaguliwa">
+                <span class="trust-dot"></span> Curated GBV resources
+              </div>
+            </div>
+          </div>
+
+          <!-- right hero section with swahili translation -->
+          <div class="hero-visual">
+            <div class="hero-text">
+            <!-- <div class="hero-avatar-wrap">
+              <img src="images/grandmother.png" alt="Sema Nami" class="hero-avatar" />
+            </div> -->
+            <!-- <h1>
+              Hauko pekee yako,<br />
+              Nami yuko hapa kukusaidia. 
+            </h1>
+            <p class="hero-subtitle">
+          <strong>Sema Nami</strong> ni msaidizi wa mazungumzo anayeelewa majeraha ya kisaikolojia ambaye husaidia
+wanaonusurika na unyanyasaji wa kijinsia kupata taarifa, zana za kukabiliana na
+hali, na njia za kupata msaada wa kitaalamu kwa kasi yao wenyewe.
             </p>
             <div class="hero-actions">
               <div class="classList"></div>
@@ -95,7 +167,7 @@
                 target="_blank"
                 rel="noopener"
               >
-                Start safe chat
+                Anza mazungumzo salama
               </a>
               <a
                 class="btn btn-ghost btn-lg"
@@ -103,39 +175,37 @@
                 target="_blank"
                 rel="noopener"
               >
-                Book a session
+                Hifadhi kikao
               </a>
             </div>
             <div class="hero-trust">
               <div class="trust-item">
-                <span class="trust-dot"></span> Anonymous & confidential
+                <span class="trust-dot"></span> Bila jina & siri
               </div>
               <div class="trust-item">
-                <span class="trust-dot"></span> 24/7 chat bot companion
+                <span class="trust-dot"></span>  Msaidizi wa mazungumzo masaa 24/7
               </div>
               <div class="trust-item">
-                <span class="trust-dot"></span> Curated GBV resources
+                <span class="trust-dot"></span> Rasilimali za GBV zilizochaguliwa kwa makini
               </div>
-            </div>
-          </div>
-          <div class="hero-visual">
+            </div> -->
             <div class="hero-image-card">
               <div class="hero-image-circle hero-image-circle--one"></div>
               <div class="hero-image-circle hero-image-circle--two"></div>
               <div class="hero-image-overlay">
                 <div class="hero-image-badge">
                   <span class="status-dot"></span>
-                  <span>Safe, anonymous space</span>
+                  <span class="lang-fade" data-en="Safe, anonymous space" data-sw="Nafasi salama, bila kutaja jina">Safe, anonymous space</span>
                 </div>
-                <p>
+                <p class="lang-fade" data-en="I felt heard without having to explain everything all at once." data-sw="Nilihisi kunisikilizwa bila kulazimika kueleza kila kitu kwa wakati mmoja.">
                   “I felt heard without having to explain everything all at
                   once.”
                 </p>
               </div>
             </div>
             <div class="hero-mini-panel">
-              <span class="hero-mini-label">Preview of Sema Nami</span>
-              <p>
+              <span class="hero-mini-label lang-fade" data-en="Preview of Sema Nami" data-sw="Muhtasari wa Sema Nam">Preview of Sema Nami</span>
+              <p class="lang-fade" data-en="A gentle bridge between silence and getting help. Created for survivors of gender‑based violence." data-sw="Daraja laini kati ya ukimya na kupata msaada. Iloundwa kwa wanaonusurika unyanyasaji wa kijinsia.">
                 A gentle bridge between silence and getting help. created for
                 survivors of gender‑based violence.
               </p>
@@ -186,16 +256,20 @@
       <section class="section section-alt" id="how-it-works">
         <div class="container section-inner">
           <div class="section-header"> 
-            <p class="eyebrow">How it works</p>
-            <h2>Three gentle steps to support.</h2>
+            <p class="eyebrow lang-fade"  data-en="How it works" data-sw="Jinsi inavyofanya kazi">How it works</p>
+            <h2 class="lang-fade" data-en="Three gentle steps to support." data-sw="Hatua tatu rahisi za kupata msaada.">Three gentle steps to support.</h2>
           </div>
 
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-badge">1</div>
               <div class="timeline-content">
-                <h3>Start an anonymous conversation</h3>
-                <p>
+                <h3 class="lang-fade" 
+              data-en="Start an anonymous conversation" 
+              data-sw="Anza mazungumzo bila kutaja jina">Start an anonymous conversation</h3>
+                <p class="lang-fade" 
+             data-en="Share as much or as little as you like with Nami chatbot companion. You can talk about your experiences, emotions, or simply ask questions." 
+             data-sw="Shiriki kadri unavyotaka na msaidizi wa mazungumzo Nami. Unaweza kuzungumza kuhusu uzoefu wako, hisia zako, au kuuliza maswali tu.">
                   Share as much or as little as you like with Nami chatbot companion.
                   You can talk about your experiences, emotions, or simply ask
                   questions.
@@ -205,8 +279,12 @@
             <div class="timeline-item">
               <div class="timeline-badge">2</div>
               <div class="timeline-content">
-                <h3>Explore tailored resources</h3>
-                <p>
+                <h3 class="lang-fade" 
+              data-en="Explore tailored resources" 
+              data-sw="Gundua rasilimali zilizoundwa kwa ajili yako">Explore tailored resources</h3>
+                <p class="lang-fade" 
+             data-en="Receive information and suggestions based on what you share: grounding exercises, safety planning prompts, legal and medical options, and local support organizations." 
+             data-sw="Pokea taarifa na mapendekezo kulingana na unachoshiriki: mazoezi ya kutuliza akili, mwongozo wa kupanga usalama, chaguzi za kisheria na kimatibabu, na mashirika ya msaada ya karibu nawe.">
                   Receive information and suggestions based on what you share:
                   grounding exercises, safety planning prompts, legal and
                   medical options, and local support organizations.
@@ -216,8 +294,12 @@
             <div class="timeline-item">
               <div class="timeline-badge">3</div>
               <div class="timeline-content">
-                <h3>Connect with a therapist</h3>
-                <p>
+                <h3 class="lang-fade" 
+              data-en="Connect with a therapist" 
+              data-sw="Wasiliana na mtaalamu wa afya ya akili">Connect with a therapist</h3>
+                <p class="lang-fade" 
+             data-en="When you are ready, choose a date and time to speak with a therapist who understands GBV and trauma recovery." 
+             data-sw="Utakapokuwa tayari, chagua tarehe na wakati wa kuzungumza na mtaalamu anayeelewa unyanyasaji wa kijinsia na kupona kutoka kwa majeraha.">
                   When you are ready, choose a date and time to speak with a
                   therapist who understands GBV and trauma recovery.
                 </p>
@@ -329,42 +411,63 @@
       <section class="section section-alt" id="support">
         <div class="container support-layout">
           <div class="support-column">
-            <h2>Two ways to receive support today.</h2>
-            <p class="section-subtitle">
+            <h2 class="lang-fade"
+          data-en="Two ways to receive support today."
+          data-sw="Njia mbili za kupata msaada leo.">Two ways to receive support today.</h2>
+            <p class="section-subtitle lang-fade" 
+            data-en="You can begin with the Nami chatbot, jump straight into a therapist session, or use both together. The pace is yours to choose."
+         data-sw="Unaweza kuanza na chatbot ya Nami, kwenda moja kwa moja kwa kikao cha mtaalamu, au kutumia vyote viwili pamoja. Kasi ni yako mwenyewe kuchagua.">
+
               You can begin with the Nami chatbot, jump straight into a therapist
               session, or use both together. The pace is yours to choose.
             </p>
 
             <div class="support-options">
               <div class="support-option">
-                <h3> Chatbot – Sema Nami</h3>
-                <p>
+                <h3 class="lang-fade"
+              data-en="Chatbot – Sema Nami"
+              data-sw="Chatbot – Sema Nami"
+> Chatbot – Sema Nami</h3>
+                <p class="lang-fade"
+             data-en="Start an anonymous conversation in your own words. Available 24/7 with gentle, supportive guidance."
+             data-sw="Anza mazungumzo bila kutaja jina kwa maneno yako mwenyewe. Inapatikana masaa 24/7 na mwongozo wa upole na wa kuunga mkono">
                   Start an anonymous conversation in your own words. Available
                   24/7 with gentle, supportive guidance.
                 </p>
               <a
-                class="btn btn-primary"
+                class="btn btn-primary lang-fade"
                 id="open-chatbot"
                 href="https://semanami-bot.gtech-prc.org/"
                 target="_blank"
                 rel="noopener"
+                data-en="Talk to the Nami chatbot"
+            data-sw="Zungumza na chatbot ya Nami"
+
               >
                 Talk to the Nami chatbot
               </a>
               </div>
 
               <div class="support-option">
-                <h3>Book a therapist</h3>
-                <p>
+                <h3 class="lang-fade"
+              data-en="Book a therapist"
+              data-sw="Hifadhi kikao na mtaalamu"
+              >Book a therapist</h3>
+                <p class="lang-fade"
+             data-en="Choose a time to speak with a trauma‑aware therapist via chat or video, depending on your comfort."
+             data-sw="Chagua wakati wa kuzungumza na mtaalamu anayeelewa majeraha ya kisaikolojia kupitia mazungumzo au video, kulingana na utulivu wako".>
                   Choose a time to speak with a trauma‑aware therapist via chat
                   or video, depending on your comfort.
                 </p>
                 <a
-                  class="btn btn-outline"
+                  class="btn btn-outline lang-fade"
                   id="open-appointment"
                   href="https://wa.me/254742004353?text=Hello%2C%20I%20would%20like%20to%20request%20a%20confidential%20therapy%20session%20via%20Sema%20Nami."
                   target="_blank"
                   rel="noopener"
+                  data-en="Book an appointment"
+                  data-sw="Hifadhi kikao"
+
                 >
                   Book an appointment
                 </a>
@@ -374,13 +477,19 @@
 
           <div class="support-column support-column--panel">
             <div class="soft-panel">
-              <h3>Quick safety note</h3>
-              <p>
+              <h3 class="lang-fade"
+            data-en="Quick safety note"
+            data-sw="Dokezo la haraka la usalama">Quick safety note</h3>
+              <p class="lang-fade"
+           data-en="If someone might check your device, remember to clear your browser history after visiting this page. You can also use your browser's private or incognito mode."
+           data-sw="Ikiwa mtu anaweza kukagua kifaa chako, kumbuka kufuta historia yako ya kivinjari baada ya kutembelea ukurasa huu. Unaweza pia kutumia hali ya faragha au incognito ya kivinjari chako."
+>
                 If someone might check your device, remember to clear your
                 browser history after visiting this page. You can also use
                 your browser’s private or incognito mode.
               </p>
-              <button class="link-button quick-exit-btn">
+              <button class="link-button quick-exit-btn lang-fade" data-en="Quick exit this page"
+                data-sw="Toka haraka ukurasa huu">
                 Quick exit this page
               </button>
             </div>
@@ -391,42 +500,59 @@
       <section class="section section-alt" id="appointment">
         <div class="container section-inner">
           <div class="section-header section-header--center">
-            <p class="eyebrow">Therapy support</p>
-            <h2>Book a confidential WhatsApp session.</h2>
+            <p class="eyebrow lang-fade" data-en="Therapy support"
+         data-sw="Msaada wa tiba">Therapy support</p>
+            <h2 class="lang-fade"
+          data-en="Book a confidential WhatsApp session."
+          data-sw="Hifadhi kikao cha siri cha WhatsApp."
+>Book a confidential WhatsApp session.</h2>
           </div>
 
           <div class="booking-layout">
             <div class="booking-form">
               <div class="form-row">
-                <p class="section-subtitle">
+                <p class="section-subtitle lang-fade" data-en="Sessions are requested directly via WhatsApp. You do not need to share your full story in the first message — just what you feel comfortable with."
+             data-sw="Vikao vinaombwa moja kwa moja kupitia WhatsApp. Huhitaji kushiriki hadithi yako yote katika ujumbe wa kwanza — tu unachojisikia vizuri nacho.">
                   Sessions are requested directly via WhatsApp. You do not need
                   to share your full story in the first message — just what you
                   feel comfortable with.
                 </p>
               </div>
               <div class="form-row">
-                <label for="whatsapp-notes"
-                  >Optional message to include in your WhatsApp chat</label
+                <label for="whatsapp-notes lang-fade" class="lang-fade" data-en="Optional message to include in your WhatsApp chat"
+                 data-sw="Ujumbe wa hiari wa kuingiza katika mazungumzo yako ya WhatsApp">
+                  Optional message to include in your WhatsApp chat</label
                 >
                 <textarea
                   id="whatsapp-notes"
                   rows="4"
+                  class="lang-fade"
+            data-en="You can leave this blank, or briefly share what you'd like support with."
+            data-sw="Unaweza kuacha hii wazi, au shiriki kwa ufupi unachohitaji msaada nacho."
+
                   placeholder="You can leave this blank, or briefly share what you’d like support with."
                 ></textarea>
               </div>
               <button
                 type="button"
-                class="btn btn-primary btn-full"
+                class="btn btn-primary btn-full lang-fade"
                 id="whatsapp-booking-btn"
+                data-en="Open WhatsApp to book"
+          data-sw="Fungua WhatsApp kuhifadhi kikao"
+
               >
                 Open WhatsApp to book
               </button>
               
             </div>
 
-            <div class="booking-summary" id="booking-summary">
-              <h3>What will be sent</h3>
-              <p class="booking-placeholder">
+            <div class="booking-summary" id="booking-summary" >
+              <h3 class="lang-fade"
+            data-en="What will be sent"
+            data-sw="Kitakachoutumwa"
+            >What will be sent</h3>
+              <p class="booking-placeholder lang-fade" data-en="Your pre‑filled WhatsApp message will be shown here before you open WhatsApp."
+           data-sw="Ujumbe wako wa WhatsApp uliojazwa awali utaonyeshwa hapa kabla ya kufungua WhatsApp.">
                 Your pre‑filled WhatsApp message will be shown here before you
                 open WhatsApp.
               </p>
@@ -441,8 +567,9 @@
         <div class="footer-brand">
           <span class="logo-mark logo-mark--small">SN</span>
           <span class="footer-title">Sema Nami</span>
-        </div>
-        <p class="footer-text">
+        </div> 
+        <p class="footer-text lang-fade" data-en="This page is for informational and supportive purposes only and does not replace professional medical, legal, or emergency services."
+       data-sw="Ukurasa huu ni kwa madhumuni ya taarifa na msaada tu na haubadilishi huduma za kitaalamu za kimatibabu, kisheria, au za dharura.">
           This page is for informational and supportive purposes only and does
           not replace professional medical, legal, or emergency services.
         </p>
@@ -452,9 +579,12 @@
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <button
-      class="quick-exit-floating quick-exit-btn"
+      class="quick-exit-floating quick-exit-btn lang-fade"
       aria-label="Quickly leave this page"
       type="button"
+        data-en="Quick&nbsp;exit"
+  data-sw="Toka&nbsp;haraka"
+
     >
       Quick&nbsp;exit
     </button>
