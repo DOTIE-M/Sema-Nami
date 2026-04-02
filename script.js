@@ -90,7 +90,7 @@ document.querySelectorAll(".quick-exit-btn").forEach((btn) => {
 });
 
 
-//create a toggle for swahili options
+//create a toggle for swahili options for Semanami landing page
 function setLang(lang){
   document.getElementById("btn-en").classList.toggle('active', lang === 'en')
   document.getElementById("btn-sw").classList.toggle('active', lang === 'sw')
@@ -107,4 +107,15 @@ function setLang(lang){
       el.style.opacity = '1';
     }, 200)
   })
+
+  //swap placeholders
+  // Handle placeholders separately
+document.querySelectorAll('[data-placeholder-en]').forEach(el => {
+  const placeholder = el.dataset[`placeholder${lang.charAt(0).toUpperCase() + lang.slice(1)}`];
+  if (placeholder) el.placeholder = placeholder;
+});
+
+  localStorage.setItem('sn-lang', lang);
+  document.documentElement.lang = lang;
 }
+
