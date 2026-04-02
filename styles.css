@@ -283,6 +283,7 @@ body {
 .btn-primary:hover {
   transform: translateY(-1px);
   box-shadow: 0 20px 55px rgba(143, 69, 204, 0.8);
+  color: #fff;
 }
 
 .btn-outline {
