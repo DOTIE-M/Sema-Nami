@@ -1666,3 +1666,41 @@ margin-left: 0.5rem;
       width: 80vw;
     }
 }
+
+@media(min-width: 750px) and (max-width: 890px) {
+       #input-field {
+        width: 70vw;
+    }
+
+    .avatar-icon {
+    top: 8vh;
+    }
+
+    .display-content{
+        margin-left: -10vw;
+    }
+
+    button.follow-up{
+
+    margin-left: 3rem;
+    }
+
+    .display-intent{
+           margin-left: 15vw;
+    }
+
+    .combined-safety-container{
+        margin: auto;
+    }
+
+    .home-icon {
+    margin-top: 1rem;
+    margin-left: 30vw;
+}
+
+
+.toggle-language {
+    padding: 13px 10px 13px 10px;
+    margin: 1.2rem 1rem 1rem 1rem;
+}
+}
