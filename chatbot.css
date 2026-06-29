@@ -250,6 +250,10 @@ a:hover {
     margin-left: 0;
 }
 
+.fallback-response p{
+    background: rgb(221, 219, 219);
+}
+
 /* quick exit button */
 .exit-link {
     text-decoration: underline;
