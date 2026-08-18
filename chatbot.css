@@ -685,6 +685,12 @@ margin-left: 1rem;
     color: #000;
 }
 
+#loading-text{
+    background: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
 
 @media (max-width: 480px) {
     /* html{
