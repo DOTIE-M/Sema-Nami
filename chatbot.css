@@ -246,12 +246,9 @@ a:hover {
     color: #7622c5;
 }
 
-.fallback-paragraph {
-    margin-left: 0;
-}
 
 .fallback-response p{
-    background: rgb(221, 219, 219);
+    margin-bottom: -1.5rem;
 }
 
 /* quick exit button */
@@ -674,11 +671,53 @@ margin-left: 1rem;
     height: 100%;
 }
 
+.fallback-paragraph {
+    width: 60vw;
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+.fallback-response{
+    background: rgb(221, 219, 219);
+}
+
+
+.fallback-response li p{
+    margin-left: -0.5rem;
+    padding: 0 8rem 0 0;
+}
+
+.fallback-paragraph p{
+    background: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.fallback-paragraph li{
+    list-style: none;
+    color: #000;
+    
+}
 
 .fallback-link {
+color: rgb(68, 68, 218);
+    margin-left: 1.5rem;
+}
+
+span.fallback-link-text{
+    background: none;
     color: #000;
-    margin-left: 1rem;
-    text-decoration: underline;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.fallback-link-text, .fallback-link{
+    display: inline-flex;
+}
+
+a.fallback-link {
+  padding-top: 1rem;  
+  margin-left: 0.3rem; 
 }
 
 .fallback-link:hover {
@@ -692,7 +731,7 @@ margin-left: 1rem;
     text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 340px) and(max-width: 480px) {
     /* html{
     height: 100%;
     overflow: hidden;
@@ -714,18 +753,33 @@ font-size: 14pt;
         font-size: 23pt;
     }
 
-    
-
 
     .fallback-paragraph {
     margin-left: 1rem;
+    width: 85vw;
+    background: none;
 }
 
-.fallback-paragraph p{
-    width: 90vw;
+.fallback-response p{
+    background: none;
 }
 
-    .display-list-header{
+.fallback-response p, .fallback-response strong{
+    background: none;
+    border: none;
+    margin-bottom: -1.2rem;
+}
+
+.fallback-response li{
+    margin-left: -1rem;
+    padding: 0;
+}
+
+a.fallback-link, .fallback-link-text{
+    margin-left: 1.5rem;
+}
+
+.display-list-header{
  margin: 1rem 1rem;
 }
 
@@ -930,7 +984,7 @@ margin: 0.5rem auto;
 
     .display-intent p,
 .followup-container p {
-    background: #fff;
+    
     color: #000;
     padding: 1rem 0.5rem 1rem 1rem;
     border-radius: 0px 0px 10px 10px;
